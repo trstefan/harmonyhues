@@ -25,8 +25,8 @@ export function DialogDemo() {
           <DialogTitle>Note</DialogTitle>
           <DialogDescription>
             These backgrounds are designed for full-page backgrounds. The
-            preview may differ from the actual result. Please click 'Preview' to
-            test and adjust the settings as necessary
+            preview may differ from the actual result. Please click
+            &apos;Preview&apos; to test and adjust the settings as necessary
           </DialogDescription>
         </DialogHeader>
       </DialogContent>
