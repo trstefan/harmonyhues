@@ -7,10 +7,20 @@ import { BACKGROUND_OPTIONS } from "@/components/backgrounds";
 import { Toaster } from "sonner";
 import { Button } from "@/components/ui/button";
 import { DialogDemo } from "@/components/dialogBox";
+import TabsDemo from "@/components/tabs";
 
 export default function Home() {
   const [preview, setPreview] = useState<null | React.ReactNode>(null);
   const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [selectedTheme, setSelectedTheme] = useState("all");
+
+  const handleTabChange = (value: any) => {
+    setSelectedTheme(value);
+  };
+
+  const filteredBackgroundOptions = BACKGROUND_OPTIONS.filter((background) => {
+    return selectedTheme === "all" || background.theme === selectedTheme;
+  });
 
   const resetBg = () => {
     setPreview(null);
@@ -83,9 +93,9 @@ export default function Home() {
             </div>
           </div>
           <div className="overflow-hidden px-4 pb-20 pt-52 md:px-10">
-            {" "}
+            <TabsDemo onTabChange={handleTabChange} />
             <div className="grid grid-cols-1 gap-6 pb-6 md:grid-cols-2 lg:grid-cols-4">
-              {BACKGROUND_OPTIONS.map((background, index) => {
+              {filteredBackgroundOptions.map((background, index) => {
                 return (
                   <BackgroundCard
                     key={index}
