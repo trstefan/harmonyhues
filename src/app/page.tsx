@@ -73,9 +73,8 @@ export default function Home() {
               </h2>
               <p className="mt-6 text-center text-lg leading-6 text-gray-600 dark:text-gray-200">
                 Effortlessly enhance your projects with our ready-to-use
-                snippets. All designs are built with Tailwind CSS and
-                <span className="cursor-wait opacity-70"> Vanilla CSS</span> for
-                easy integration.
+                snippets. All designs are built with Tailwind CSS for easy
+                integration.
               </p>
               <div className="mt-10 flex gap-4">
                 <a
