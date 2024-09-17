@@ -64,10 +64,19 @@ const CustomGradient7 = () => {
     <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[linear-gradient(225deg,_hsla(340,_58%,_66%,_1)_0%,_hsla(57,_100%,_91%,_1)_100%)]" />
   );
 };
-
 const CustomGradient8 = () => {
   return (
     <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[linear-gradient(360deg,_hsla(213,_100%,_41%,_1)_10%,_hsla(0,_0%,_0%,_1)_100%)]" />
+  );
+};
+const CustomGradient9 = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[linear-gradient(225deg,_hsla(285,_100%,_74%,_1)_0%,_hsla(0,_100%,_71%,_1)_100%)]" />
+  );
+};
+const CustomGradient10 = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[linear-gradient(220.55deg,_#24CFC5_0%,_#001C63_100%)]" />
   );
 };
 
@@ -131,6 +140,17 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Custom Background 8",
     component: <CustomGradient8 />,
+    theme: "dark",
+  },
+  {
+    name: "Custom Background 9",
+    component: <CustomGradient9 />,
+    theme: "light",
+  },
+
+  {
+    name: "Custom Background 10",
+    component: <CustomGradient10 />,
     theme: "dark",
   },
 ] as const;
