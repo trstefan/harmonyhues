@@ -92,6 +92,18 @@ const CustomGradient12 = () => {
   );
 };
 
+const CustomGradient13 = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[linear-gradient(220.55deg,_#B7DCFF_0%,_#FFA4F6_100%)]" />
+  );
+};
+
+const CustomGradient14 = () => {
+  return (
+    <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 bg-[linear-gradient(180deg,_hsla(252,_40%,_29%,_1)_0%,_hsla(270,_77%,_71%,_1)_100%)]" />
+  );
+};
+
 export const BACKGROUND_OPTIONS = [
   {
     name: "Background Light Gradient1 ",
@@ -174,6 +186,16 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Custom Background 12",
     component: <CustomGradient12 />,
+    theme: "dark",
+  },
+  {
+    name: "Custom Background 13",
+    component: <CustomGradient13 />,
+    theme: "light",
+  },
+  {
+    name: "Custom Background 14",
+    component: <CustomGradient14 />,
     theme: "dark",
   },
 ] as const;
