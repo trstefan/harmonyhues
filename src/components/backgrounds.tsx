@@ -116,6 +116,17 @@ const CustomGradient16 = () => {
   );
 };
 
+const CustomGradient17 = () => {
+  return (
+    <div className="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-[#f0f0f0] bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(183,165,112,.5)_100%)]" />
+  );
+};
+
+const CustomGradient18 = () => {
+  return (
+    <div className="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-[#004769] bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(0,0,0,.5)_100%)]" />
+  );
+};
 export const BACKGROUND_OPTIONS = [
   {
     name: "Background Light Gradient1 ",
@@ -218,6 +229,17 @@ export const BACKGROUND_OPTIONS = [
   {
     name: "Custom Background 16",
     component: <CustomGradient16 />,
+    theme: "dark",
+  },
+
+  {
+    name: "Custom Background 17",
+    component: <CustomGradient17 />,
+    theme: "light",
+  },
+  {
+    name: "Custom Background 18",
+    component: <CustomGradient18 />,
     theme: "dark",
   },
 ] as const;
